@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+  name: "blog";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+
+  /* Colores Base */
+  --color-base-100: oklch(98% 0.01 0);      /* Blanco puro para el fondo principal */
+  --color-base-200: oklch(95% 0.01 240);    /* Gris muy claro con toque azul */
+  --color-base-300: oklch(90% 0.01 240);    /* Gris claro para elementos de contraste */
+  --color-base-content: oklch(25% 0.02 240); /* Casi negro con toque azul para texto */
+
+  /* Colores Primarios y Secundarios */
+  --color-primary: oklch(55% 0.25 250);      /* Azul vibrante moderno */
+  --color-primary-content: oklch(98% 0 0);   /* Blanco para texto sobre primario */
+  --color-secondary: oklch(65% 0.22 320);    /* Rosa moderno */
+  --color-secondary-content: oklch(98% 0 0); /* Blanco para texto sobre secundario */
+
+  /* Acentos y Neutrales */
+  --color-accent: oklch(70% 0.25 180);       /* Turquesa vibrante */
+  --color-accent-content: oklch(15% 0 0);    /* Casi negro para texto sobre acento */
+  --color-neutral: oklch(85% 0.02 240);      /* Gris neutro con toque azul */
+  --color-neutral-content: oklch(20% 0 0);   /* Gris muy oscuro */
+
+  /* Estados y Alertas */
+  --color-info: oklch(65% 0.2 230);         /* Azul informativo */
+  --color-info-content: oklch(98% 0 0);     /* Blanco */
+  --color-success: oklch(65% 0.2 150);      /* Verde éxito */
+  --color-success-content: oklch(98% 0 0);  /* Blanco */
+  --color-warning: oklch(75% 0.2 90);       /* Amarillo advertencia */
+  --color-warning-content: oklch(20% 0 0);  /* Casi negro */
+  --color-error: oklch(65% 0.25 30);        /* Rojo error moderno */
+  --color-error-content: oklch(98% 0 0);    /* Blanco */
+
+  /* Diseño y Forma */
+  --radius-selector: 1rem;     /* Bordes más suaves */
+  --radius-field: 0.75rem;    /* Campos de formulario */
+  --radius-box: 1.25rem;      /* Cajas y tarjetas */
+  --size-selector: 0.2rem;    /* Tamaño de selectores */
+  --size-field: 0.2rem;       /* Tamaño de campos */
+  --border: 1px;             /* Bordes finos */
+  --depth: 5;                /* Profundidad de sombras */
+  --noise: 0;               /* Sin ruido para un look más limpio */
+
+  /* Personalizaciones Adicionales */
+  --shadow-color: 240 10% 20%;
+  --shadow-strength: 2%;
+  --btn-text-case: none;     /* Botones sin transformación de texto */
+  --rounded-btn: 0.75rem;    /* Botones con bordes suaves */
+  --tab-radius: 0.75rem;     /* Pestañas con bordes suaves */
+  --animation-btn: 0.2s;     /* Animaciones rápidas */
+  --animation-input: 0.2s;   /* Animaciones de input rápidas */
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, oklch(55% 0.25 250) 0%, oklch(65% 0.22 320) 100%);
+  --gradient-secondary: linear-gradient(135deg, oklch(65% 0.22 320) 0%, oklch(70% 0.25 180) 100%);
+}
